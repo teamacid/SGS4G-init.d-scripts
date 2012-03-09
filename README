@@ -1,0 +1,19 @@
+Welcome to the init.d scripts!
+
+This repository was created to allow us to keep an updated copy of working init.d scripts.
+
+Before you commit any new changes to this repo, make sure you have tested the init.d script
+adb shell
+cd /system/etc/init.d/
+./00your_script
+
+Make sure that running it directly produces no errors and verify that it works properly when
+it is run using run-parts.
+Using ddms you can create a logcat filter for the 'run-parts' tag to see script output
+
+ddms
+Reboot phone
+Look at logcat output
+
+Notes:
+Make sure that you chmod +x your scripts!
